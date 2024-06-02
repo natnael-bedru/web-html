@@ -76,9 +76,11 @@ nav.sticky .logo a {
 }
 
 .home {
-  background-color: green;
+  /* background-color: green; */
+  background-color: black;
+  color: white;
   padding-top: 10dvh;
-  height: 100dvh;
+  /* height: 100dvh; */
 }
 
 .home div[sub-section="all-courses"] {
@@ -108,6 +110,7 @@ nav.sticky .logo a {
   width: 75dvw;
   padding: 0.5rem 0;
   font-weight: bold;
+  color: black;
 }
 
 .home div[sub-section="all-courses"] .body__overlay {
@@ -115,6 +118,7 @@ nav.sticky .logo a {
   top: 9rem;
   width: 75dvw;
   padding: 0.5rem 23rem;
+  color: black;
 }
 
 .home div[sub-section="all-courses"] .button__overlay {
@@ -137,7 +141,7 @@ nav.sticky .logo a {
   display: flex;
   flex-direction: column;
   height: 10rem;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .content {
@@ -165,7 +169,7 @@ nav.sticky .logo a {
   display: flex;
   flex-direction: column;
   height: 10rem;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 /* CSS */
@@ -222,3 +226,8 @@ nav.sticky .logo a {
   transform: translateY(2px);
 }
 /* ------------ */
+
+a {
+  text-decoration: none;
+  color: white;
+}
