@@ -24,6 +24,7 @@ nav {
     rgba(0, 0, 0, 1) 55%,
     rgba(0, 0, 0, 1) 100%
   );
+  z-index: 1;
 }
 
 nav .nav-content {
@@ -84,7 +85,7 @@ nav.sticky .logo a {
 .home div {
   width: 100vw; /* Corrected unit from 100dvw to 100vw */
   height: 30px;
-  padding: 30px;
+  /* padding: 30px; */
   background-color: white;
 }
 
@@ -92,6 +93,44 @@ nav.sticky .logo a {
   margin: 20px 12.5dvw;
   width: 75dvw;
   border-radius: 15px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  height: 20rem;
+  z-index: 0;
+}
+
+.home div[sub-section="all-courses"] img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Resize the image to cover the entire container */
+  /* Center the image horizontally and vertically  */
+  /* object-position: center; */
+  object-position: 0px -185px; /* Shift the image 10 pixels to the right and 20 pixels down */
+  border-radius: 15px;
+}
+.home div[sub-section="all-courses"] .heading__overlay {
+  position: absolute;
+  top: 7rem;
+  width: 75dvw;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+.home div[sub-section="all-courses"] .body__overlay {
+  position: absolute;
+  top: 9rem;
+  width: 75dvw;
+  padding: 0.5rem 23rem;
+}
+
+.home div[sub-section="all-courses"] .button__overlay {
+  position: absolute;
+  top: 15rem;
+  left: 31.5rem;
+  width: 10dvw;
+  padding: 0.5rem 0;
 }
 
 .home div[sub-section="categories"] {
@@ -109,3 +148,58 @@ nav.sticky .logo a {
   margin: 20px 5dvw;
   width: 90dvw;
 }
+
+/* CSS */
+/* Link: https://getcssscan.com/css-buttons-examples */
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* ------------ */
